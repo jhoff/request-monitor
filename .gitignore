@@ -1,0 +1,9 @@
+.DS_Store
+/.idea/
+/vendor/
+/composer.phar
+/*.sublime-workspace
+/coverage/
+/storage/
+.phpunit.result.cache
+/composer.lock

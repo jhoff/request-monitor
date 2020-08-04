@@ -1,0 +1,41 @@
+{
+    "name": "jhoff/request-monitor",
+    "description": "PHP utility to monitor and report external HTTP requests",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Jordan Hoff",
+            "email": "jhoff@twothirds.io"
+        }
+    ],
+    "require": {
+        "php": "^7.3",
+        "illuminate/support": "^6.0|^7.0",
+        "nesbot/carbon": "^2.0",
+        "stripe/stripe-php": "^7.0",
+        "phpunit/phpunit": "^7.0 || ^8.0 || ^9.0"
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "preferred-install": "dist",
+        "sort-packages": true
+    },
+    "autoload": {
+        "psr-4": {
+            "Jhoff\\RequestMonitor\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Jhoff\\RequestMonitor\\RequestMonitorServiceProvider"
+            ]
+        }
+    }
+}
